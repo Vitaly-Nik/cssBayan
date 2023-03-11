@@ -1,0 +1,256 @@
+/*Обнуление стилей*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,
+  :active {
+    outline: none;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  /*--------------------*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    height: max-content;
+    padding: 20px 0px;
+    background-color: rgb(86, 50, 107);
+    background-size: 200% 200%;
+}
+.container {
+    border-radius: 10px;
+    height: max-content;
+    max-width: 60%;
+    max-height: max-content;
+    margin: 0 auto;
+    font-family: 'Play', sans-serif;
+    background: rgba(240, 145, 102, 0.1);
+    transition: .3s;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.h1 {
+  margin: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(170, 207, 67);
+    text-shadow: 2px 2px 2px #000;
+}
+.mem {
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    border-top: 2px solid rgb(170, 207, 67);
+    padding: 10px 0px;
+}
+.mem__1 {
+}
+label{
+    transition: all .3s;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0px 15px;
+}
+.mem__text {
+  transition: all .3s;
+  flex: 0 1 95%;
+}
+.text_1 {
+}
+.mem__cross {
+  text-align: center;
+    width: 10px;
+    flex: 0 1 5%;
+    opacity: 0;
+    transition: all .3s;
+    font-size: 40px;
+    font-weight: 700;
+}
+.container:hover .mem__text{
+  color: rgb(170, 207, 67);
+  text-shadow: 2px 2px 2px #000;
+}
+.container:hover .mem__cross{
+  opacity: 1;
+  color: rgb(170, 207, 67);
+  text-shadow: 2px 2px 2px #000;
+}
+.cross__1 {
+}
+.mem__input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+@keyframes image-animation-increase {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+@keyframes image-animation-decrease {
+  from {transform: scale(1)}
+  to {transform: scale(0)}
+}
+.mem__img {
+  display: none;
+  flex: 0 1 100%;
+  margin: 10px 0px;
+  min-height: 2%;
+  min-width: 2%;
+  max-width: 40%;
+  transform: scale(0);
+}
+.mem__input:checked ~ label > .mem__img{
+        display:block;
+        animation: image-animation-increase 0.5s;
+        transform: scale(1);
+}
+.mem:hover > label > .mem__img{
+        display:block;
+        animation: image-animation-increase 0.5s;
+        transform: scale(1);
+
+}
+.mem:hover > label > span{
+    transform: rotate(45deg);
+}
+.mem__input:checked ~ label > span{
+    transform: rotate(45deg); 
+}
+.mem__input:checked ~ label > h2{
+  color: rgb(170, 207, 67);
+  text-shadow: 2px 2px 2px #000;
+}
+.contant__1 {
+}
+
+.img__1 {
+}
+.mem__2 {
+}
+.text_2 {
+}
+.cross__2 {
+}
+.contant__2 {
+}
+.img__2 {
+}
+.mem__3 {
+}
+.text_3 {
+}
+.cross__3 {
+}
+.contant__3 {
+}
+.img__3 {
+}
+.mem__4 {
+}
+.text_4 {
+}
+.cross__4 {
+}
+.contant__4 {
+}
+.img__4 {
+}
+.mem__5 {
+}
+.text_5 {
+}
+.cross__5 {
+}
+.contant__5 {
+}
+.img__5 {
+}
+.mem__6 {
+}
+.text_6 {
+}
+.cross__6 {
+}
+.contant__6 {
+}
+.img__6 {
+}
