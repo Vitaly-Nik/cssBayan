@@ -118,7 +118,6 @@ body{
     font-size: 1.56rem;
     font-weight: 400;
     border-top: 0.170rem solid rgb(170, 207, 67);
-    padding: 0.625rem 0rem;
 }
 label{
     transition: all .3s;
@@ -129,6 +128,7 @@ label{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 0.625rem 0rem;
 }
 .mem__text {
   transition: all .3s;
