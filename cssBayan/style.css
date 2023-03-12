@@ -81,27 +81,30 @@ body{
     height: max-content;
     padding: 20px 0px;
     background-color: rgb(86, 50, 107);
-    background-size: 200% 200%;
 }
 .container {
     border-radius: 10px;
     height: max-content;
-    max-width: 60%;
+    max-width: 80em;
     max-height: max-content;
     margin: 0 auto;
     font-family: 'Play', sans-serif;
-    background: rgba(240, 145, 102, 0.1);
+    /* background: rgba(240, 145, 102, 0.1); */
     transition: .3s;
 }
 .main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    max-width: 95%;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    background: rgba(240, 145, 102, 0.1);
+    border-radius: 10px;
 }
 .h1 {
   margin: 10px;
-    font-size: 50px;
+    font-size: 3.125em;
     font-weight: 700;
     color: rgb(170, 207, 67);
     text-shadow: 2px 2px 2px #000;
@@ -111,7 +114,7 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 1.56em;
     font-weight: 400;
     border-top: 2px solid rgb(170, 207, 67);
     padding: 10px 0px;
@@ -127,21 +130,20 @@ label{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
 }
 .mem__text {
   transition: all .3s;
-  flex: 0 1 95%;
+  flex: 0 1 90%;
 }
 .text_1 {
 }
 .mem__cross {
   text-align: center;
-    width: 10px;
     flex: 0 1 5%;
     opacity: 0;
     transition: all .3s;
-    font-size: 40px;
+    font-size: 1.45em;
     font-weight: 700;
 }
 .container:hover .mem__text{
@@ -173,9 +175,10 @@ label{
   display: none;
   flex: 0 1 100%;
   margin: 10px 0px;
-  min-height: 2%;
-  min-width: 2%;
-  max-width: 40%;
+  min-height: auto;
+  min-width: auto;
+  max-width: 23em;
+  width: 100%;
   transform: scale(0);
 }
 .mem__input:checked ~ label > .mem__img{
