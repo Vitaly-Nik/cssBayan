@@ -146,14 +146,27 @@ label{
     font-size: 1.45em;
     font-weight: 700;
 }
-.container:hover .mem__text{
+@media (hover: hover){
+.main:hover .mem__text{
   color: rgb(170, 207, 67);
   text-shadow: 2px 2px 2px #000;
 }
-.container:hover .mem__cross{
+.main:hover .mem__cross{
   opacity: 1;
   color: rgb(170, 207, 67);
   text-shadow: 2px 2px 2px #000;
+}
+}
+@media (hover: none) {
+  /* .mem__text{
+    color: rgb(170, 207, 67);
+    text-shadow: 2px 2px 2px #000;
+  } */
+  .mem__cross{
+    opacity: 1;
+    color: rgb(170, 207, 67);
+    text-shadow: 2px 2px 2px #000;
+  }
 }
 .cross__1 {
 }
@@ -186,15 +199,27 @@ label{
         animation: image-animation-increase 0.5s;
         transform: scale(1);
 }
-.mem:hover > label > .mem__img{
+@media (hover: hover){
+  .mem:hover > label > .mem__img{
+    display:block;
+    animation: image-animation-increase 0.5s;
+    transform: scale(1);
+  
+}
+  .mem:hover > label > span{
+    transform: rotate(45deg);
+}
+}
+/* .mem:hover > label > .mem__img{
         display:block;
         animation: image-animation-increase 0.5s;
         transform: scale(1);
 
-}
-.mem:hover > label > span{
+} */
+
+/* .mem:hover > label > span{
     transform: rotate(45deg);
-}
+} */
 .mem__input:checked ~ label > span{
     transform: rotate(45deg); 
 }
